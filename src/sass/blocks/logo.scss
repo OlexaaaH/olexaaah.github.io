@@ -1,0 +1,33 @@
+.logo {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+
+    @include mobile {
+        width: 60px;
+        height: 60px;
+    }
+
+    @include desktop {
+        opacity: 0.6;
+        width: 75px;
+        height: 75px;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+
+    &--facebook {
+        background-image: url("../img/facebook.png");
+    }
+
+    &--linkedin {
+        background-image: url("../img/linkedin.png");
+    }
+
+    &--instagram {
+        background-image: url("../img/instagram.png");
+    }
+}
