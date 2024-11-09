@@ -1,16 +1,15 @@
 {
     "name": "olexaaah",
     "version": "1.1.0",
-    "main": "/src/js/index.js",
     "author": "OlexaaaH",
     "license": "",
     "repository": "https://github.com/OlexaaaH/OlexaaaH.github.io",
     "homepage": "https://OlexaaaH.github.com",
     "scripts": {
-        "build": "rm -rf build && parcel build src/index.html -d build --public-url ./",
+        "build": "rm -rf build && parcel build src/index.html",
         "dev": "parcel --port 8000 src/index.html",
-        "serve": "serve -s build",
-        "deploy": "NODE_DEBUG=gh-pages gh-pages -d build -b master"
+        "serve": "serve -s dist",
+        "deploy": "NODE_DEBUG=gh-pages gh-pages -d dist -b master"
     },
     "devDependencies": {
         "@parcel/packager-raw-url": "^2.12.0",
