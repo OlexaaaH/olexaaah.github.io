@@ -3,6 +3,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 12px;
+    color: rgba($color: $link, $alpha: 1);
 
     @include mobile {
         width: 60px;
@@ -19,15 +20,8 @@
         opacity: 1;
     }
 
-    &--facebook {
-        background-image: url("../img/facebook.png");
-    }
-
-    &--linkedin {
-        background-image: url("../img/linkedin.png");
-    }
-
-    &--instagram {
-        background-image: url("../img/instagram.png");
+    & svg {
+        width: 72px;
+        height: 72px;
     }
 }

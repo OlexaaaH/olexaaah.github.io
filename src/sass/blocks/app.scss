@@ -13,12 +13,9 @@
         height: 100%;
         z-index: -10;
         background-image: url("../img/bg.jpg");
+        background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
-        
-        @include mobile {
-            background-position-x: right;
-        }
     }
 
     @include mobile {

@@ -5,5 +5,4 @@ node_modules/
 build/
 __build/
 yarn-error.log
-package-lock.json
 .cache
